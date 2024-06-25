@@ -8,9 +8,9 @@ export default function Home() {
     <div className={styles.container}>
       <Navbar />
       <div className={styles.content}>
-        <div data-aos="fade-up" className={styles.mainText}>
+        <div data-aos="fade-up" className={styles.mainTextContainer}>
           <span className={styles.weAre}>We are</span>
-          <h1>
+          <h1 className={styles.mainText}>
             TECH-SAVVY PALS, <br />
             ALWAYS READY TO <br />
             <span className={styles.magic}>SPRINKLE</span> A BIT OF <span className={styles.magic}>MAGIC</span>

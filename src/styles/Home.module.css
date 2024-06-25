@@ -9,15 +9,20 @@
 }
 
 .content {
-  margin-top: auto;
+  margin-top: 300px; /* Increased value to add more space between the navbar and content */
   padding-bottom: 50px;
   opacity: 0;
   animation: fadeIn 1s forwards 1.2s;
 }
 
-.mainText h1 {
+.mainTextContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.mainText {
   font-family: 'Jost', sans-serif;
-  font-size: 104px;
+  font-size: 90px;
   font-weight: 700;
   line-height: 98.82px;
   text-align: center;
@@ -26,17 +31,19 @@
   overflow: hidden;
 }
 
-.mainText .weAre {
+.weAre {
   font-family: 'Zeyada', cursive;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 400;
   line-height: 60.81px;
-  display: block;
-  text-align: left;
   color: #AB87FF;
+  position: absolute;
+  left: -1px; /* Adjust as needed for correct positioning */
+  top: 40%; /* Adjust to move the text down */
+  transform: translateY(-50%) rotate(-30deg); /* Rotate the text by 30 degrees */
 }
 
-.mainText .magic {
+.magic {
   color: #AB87FF; /* Apply the desired color to the magic spans */
 }
 

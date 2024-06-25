@@ -1,36 +1,25 @@
-/* src/styles/Navbar.module.css */
 .navbar {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
   font-family: 'Jost', sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  justify-content: center;
-  padding: 20px 0;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 20px 264px 20px 750px; /* Adjust the left padding to move navbar to the right */
   background-color: #191919;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000; /* Ensure the navbar is above other elements */
-  transition: all 0.3s ease-in-out;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
+  margin: 0 40px; /* Increase the margin to add more space between words */
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    font-size: 18px;
-    padding: 10px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    font-size: 16px;
-  }
+.logo {
+  margin:0 550px; /* Add space between the logo and the first nav item */
+  height: 40px; /* Adjust the size of the logo as needed */
 }
